@@ -13,7 +13,7 @@ parser.add_argument(
     "--genome_id", type=str, default="", help="Genome id for making bigWig file"
 )
 parser.add_argument(
-    "--reusebw", action="store_false", help="Whether to create bigWig"
+    "--reusebw", action="store_true", help="Whether to create bigWig"
 )
 args = parser.parse_args()
 

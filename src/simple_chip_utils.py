@@ -114,7 +114,7 @@ def create_bw_track_controller(
         o.write(
             "#"
             + " ".join(
-                ["ln", "-s", os.path.abspath(bw_path), os.path.abspath(webdir),]
+                ["ln", "-s", os.path.abspath(bw_path), os.path.abspath(webdir)]
             )
             + "\n"
         )
