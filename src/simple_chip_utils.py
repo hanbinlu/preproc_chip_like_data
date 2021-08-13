@@ -112,14 +112,9 @@ def create_bw_track_controller(
     bw = bw_path.split("/")[-1]
     with open(f"{webdir}/{bw}.track_control.txt", "w") as o:
         o.write(
-            " ".join(
-                "#"
-                + [
-                    "ln",
-                    "-s",
-                    os.path.abspath(bw_path),
-                    os.path.abspath(webdir),
-                ]
+            "#"
+            + " ".join(
+                ["ln", "-s", os.path.abspath(bw_path), os.path.abspath(webdir),]
             )
             + "\n"
         )
