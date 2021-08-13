@@ -27,6 +27,6 @@ if not args.reusebw:
 
 bw_path = f"{tagdir}/{tagdir}.ucsc.bigWig"
 simple_chip_utils.create_bw_track_controller(
-    tagdir, args.webdir, args.host,
+    bw_path, args.webdir, args.host,
 )
 
